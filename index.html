@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Patryk Maternicki. FrontDeveloper</title>
+  </head>
+  <body>
+    <header itemscope itemtype="http://schema.org/Person">
+      <h1 itemprop="name">
+        <span  itemprop="givenName"> Patryk </span>
+        <span itemprop="familyName"> Maternicki </span>
+      </h1>
+      <nav>
+        <h2> Menu </h2>
+        <ul>
+          <li>
+            <a href="#edukcja">zainteresowania</a>
+            <ul>
+              <li>
+                <a href="#zsgh">zsgh</a>
+              </li>
+              <li>
+                <a href="#teb">teb</a>
+              </li>
+              <li>
+                <a href="#pjwstk">pjwstk</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+              <a href="#ksiazki">ksiazki</a>
+          </li>
+          <li>
+            <a href="#wyglad">moj wyglad</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="zainteresowania">
+  	     <h2>Zainteresowania:</h2>
+         <ul>
+           <li>&minus;Ekonomia</li>
+           <li>&minus;Polityka</li>
+         </ul>
+      </section>
+      <section id="edukacja">
+	       <h2>Wyksztalcenie:</h2>
+         <ul  itemscope itemtype="http://schema.org/Person">
+           <li>
+            <div id="zsgh">
+             <h3>
+               <a itemprop="colleague" href="http://www.zsgh.edu.pl/">ZGSH</a>
+             </h3>
+             <p>Kierunek: Technik&mdash;Kucharz &nbsp;</p>
+            </div>
+           </li>
+             <li>
+              <div id="pjwstk">
+               <h3>
+                 <a itemprop="colleague" href="https://gdansk.pjwstk.edu.pl/">PJWSTK</a>
+               </h3>
+               <p>Kierunek: informatyka&nbsp;/p>
+              </div>
+             </li>
+             <li>
+               <div id="teb">
+               <h3>
+                 <a itemprop="colleague" href="http://www.teb.pl/"> TEB Edukacja</a>
+               </h3>
+               <p>Kierunek: informatyka&nbsp;</p>
+               </div>
+             </li>
+         </ul>
+      </section>
+      <section id="ksiazki">
+        <h2> Ulubione ksiazki </h2>
+          <ol>
+            <li>
+                <ul>
+                  <li><span class="book">Nazwa: Alicja w krainie czarów&nbsp;</span></li>
+                  <li>Autor: Jerzy Urban&nbsp;</li>
+                  <li>Wydawnictwo: Jakies tam</li>
+                </ul>
+            </li>
+            <li>
+              <ul>
+                <li><span class="book">Nazwa: ABC&nbsp;</span></li>
+                <li>Autor: ABC&nbsp;</li>
+                <li>Wydawnictwo: ABC</li>
+              </ul>
+            </li>
+          </ol>
+      </section>
+      <section id="wyglad">
+        <h2>Moj wyglad</h2>
+        <p>Ja</p>
+        <figure  itemtype="http://schema.org/Image">
+          <img itemprop="embedUrl" src="yotsuba.jpg" width="150" height="150" />
+          <figcaption itemprop="about">Yotsuba</figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer>
+    <p>Strona stworzona: <time datetime="2018-03-10">23&ndash;10&ndash;2013 roku&nbsp;</time></p>
+    </footer>
+  </body>
+</html>
