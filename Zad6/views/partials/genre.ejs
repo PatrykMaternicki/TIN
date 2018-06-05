@@ -1,0 +1,41 @@
+<header>
+<h1><a href="../../">Księgarnia Żurek</a></h1>
+</header>
+<%- include("nav_genres.ejs", {className: "small"}) %>
+<section>
+<form method="post">
+    <h3>Mów pan kim jesteś</h3>
+    <label>Login<input name='login' type='text' required='required' /></label>
+    <label>Password<input name='password' type='password' required='required' /></label>
+    <input type='submit' value="Zaloguj sie" />
+</form>
+
+<h2><%= genre %></h2>
+<table>
+    <tr>
+        <th>ID</th><th>Author</th><th>Title</th><th>Genre</th>
+    </tr>
+<% for(var i=0; i<books.length; i++) {%>
+    <tr>
+        <td><%= books[i][0] %></td>
+        <td><%= books[i][1] %></td>
+        <td><%= books[i][2] %></td>
+        <td><%= books[i][3] %></td>
+    </tr>
+<% } %>
+</table>
+<%= authorized %>
+<% if (authorized) { %>
+    <form method="post">
+            <p>
+                <span>Tytuł: </span><input name='title'  required='required' />
+            </p>
+            <p>
+                <span>Autor: </span><input name='author'  required='required' />
+            </p>
+            <p>
+                <input type='submit' value="Dodaj książkę" />
+            </p>
+        </form>
+<% } %>
+</section>
