@@ -29,7 +29,7 @@ app.get('/', function (req, res) {
 
 app.get('/:gen', function (req, res) {
     var genres = baza().distinct("genre");
-    baza.order("title");
+    baza.sort("title");
     var books = baza({genre: req.params.gen}).select("___id", "author", "title", "genre");
     var genre = req.params.gen;
     res.render('index.ejs', {genres: genres, books: books, genre: genre, authorized: authorized});
